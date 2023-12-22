@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 10px;
+}
+
+.container .form{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .text{
+    height: 100vh;
+    width: 40%;
+    background: linear-gradient(170deg, #7d05ee, #35026e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .form h1{
+    font-size: 45px;
+    color: #7d05ee;
+}
+
+.container .form h6{
+    font-size: 12px;
+    color: #35026e;
+    margin-bottom: 20px;
+}
+
+.container .form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .input-field{
+    width: 60%;
+    margin: auto;
+    height: 60px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #1d6df720, -5px -5px 10px #1d6df720;
+    position: relative;
+}
+
+form .input-field input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 20px 70px;
+    font-size: 18px;
+}
+
+form .input-field i{
+    position: absolute;
+    color: #7d05ee;
+    font-size: 30px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+form .input-field i.eyes{
+    left: 90%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form .check{
+    width: 60%;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+}
+
+form .check input{
+    margin: 0 5px 0 20px;
+}
+
+form .check span{
+    margin-top: 3px;
+    color: #555555;
+    font-size: 13px;
+}
+
+form .btn{
+    color: #fff;
+    font-size: 20px;
+    width: 200px;
+    margin: auto;
+    background: linear-gradient(170deg, #7d05ee, #35026e);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+form .register{
+    text-align: center;
+    font-size: 14px;
+}
+
+form .register a{
+    color: #7d05ee;
+    text-decoration: none;
+}
+
+form .register:hover a{
+    text-decoration: underline;
+}
+
+.text h1{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    color: #f0f0f0;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 2;
+}
+
+

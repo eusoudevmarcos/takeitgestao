@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Take It</title>
+    <link rel="stylesheet" href="cdprofissional.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!--<div class="logo">
+        <img src="img/Vertical com Assinatura V1.png" alt="">
+    </div>-->
+    <div id="main-container">
+        <h1>Cadastre o profissional aqui</h1>
+        <form action="register-form">
+            <div class="full-box spacin">
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Informe o nome completo">
+            </div>
+            <div class="full-box"> <!--criar botão de + para mais emails-->
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite o e-mail">
+            </div>
+            <div class="full-box"> <!--criar botão de + para mais redes sociais dando opção de escolha entre, linkedin, isntagram, facebook e doctoralia-->
+                <label for="email">Redes Sociais:</label>
+                <input type="email" name="email" id="email" placeholder="Digite o e-mail">
+            </div>
+            <div class="half-box-c"> <!--criar botão de + para mais celulares-->
+                <label for="phone">Celular:</label>
+                <input type="number" name="phone" id="phone" placeholder="Celular">
+            </div>
+            <div class="half-box-c"> <!--criar botão de + para mais celulares-->
+                <label for="phone">Celular 2:</label>
+                <input type="number" name="phone" id="phone" placeholder="Celular">
+            </div>
+            <div class="half-box-c"> <!--criar botão de + para mais celulares-->
+                <label for="phone">Celular 3:</label>
+                <input type="number" name="phone" id="phone" placeholder="Celular">
+            </div>
+            <div class="half-box">
+                <label for="born">Data de Nascimento:</label>
+                <input type="number" name="born" id="born" placeholder="dia/mês/ano">
+            </div>
+            <div class="half-box">
+                <label for="sexo">Sexo:</label>
+                <input type="sexo" name="sexo" id="sexo" placeholder="Selecione">
+            </div>    
+            <div class="half-box">
+                <label for="job">Área:</label> <!--cadastrar as áreas: Ordem alfabética, Contabildiade, Financeiro, Saúde, Comércio-->
+                <input type="job" name="job" id="job" placeholder="Selecione">
+            </div>
+            <div class="half-box">
+                <label for="area">Profissão:(após selecionar Área)<!--vai puxar a especialidade de acordo com a área selecionada--></label>
+                <input type="area" name="area" id="area" placeholder="Selecione">
+            </div>
+            <div class="half-box">
+                <label for="area">Especialidade:(após selecionar profissão)<!--vai puxar a especialidade de acordo com a área selecionada--></label>
+                <input type="area" name="area" id="area" placeholder="Selecione">
+            </div>
+            <div class="half-box">
+                <label for="registro">Registro:</label>
+                <input type="text" name="registro" id="registro" placeholder="Informe">
+            </div>
+            <div class="half-box">
+                <label for="exames">Exames:</label>
+                <input type="text" name="exames" id="exames" placeholder="Informe os exames">
+            </div>
+            <div class="half-box">
+                <label for="doencas">Doenças que trata:</label>
+                <input type="text" name="doencas" id="doencas" placeholder="Informe as doenças">
+            </div>
+            <div class="half-box">
+                <label for="UF">Pretenção Salarial Mínima:</label>
+                <input type="UF" name="UF" id="UF" placeholder="Por consulta">
+            </div>
+            <!--criar botão de + para mais de um RQE-->
+            <div class="half-box-c">
+                <label for="rqe">RQE:</label>
+                <input type="rqe" name="rqe" id="rqe" placeholder="RQE">
+            </div>
+            <!--criar botão de + para mais CRM com o Estado de emissão embutido, vamos reduzir a caixa e colocar apenas a sigla UF-->
+            <div class="half-box-c">
+                <label for="rqe">CRM:</label>
+                <input type="rqe" name="rqe" id="rqe" placeholder="RQE">
+            </div>
+            <div class="half-box-c">
+                <label for="UF">Estado de emissão:</label>
+                <input type="UF" name="UF" id="UF" placeholder="Selecione o Estado">
+            </div>
+            <div class="full-box">
+                <label for="endereco">Endereço:</label>
+                <input type="endereco" name="endereco" id="endereco" placeholder="Informe seu endereço">
+            </div>
+            <div class="half-box">
+                <label for="estado">Estado:</label>
+                <input type="estado" name="estado" id="estado" placeholder="Selecione">
+            </div>
+            <div class="half-box">
+                <label for="cidade">Cidade:</label>
+                <input type="cidade" name="cidade" id="cidade" placeholder="Selecione">
+            </div>
+            <div class="full-box-info">
+                <label for="cidade">Informações adicionais:</label>
+                <input type="cidade" name="cidade" id="cidade" placeholder="Selecione">
+            </div>
+            <div class="full-box">
+                <label for="docment" class="form-label">Documentos:</label>
+                <input type="file" name="file" id="arquivo" wire:model="documet-file" class="form-input">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+    <script src="cdprofissional.js"></script>
+</body>
+</html>

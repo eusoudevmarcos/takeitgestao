@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Take It</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre o currículo aqui</h1>
+        <form action="register-form">
+            <div class="full-box">
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Informe o nome completo">
+            </div>
+            <div class="full-box"> <!--criar botão de + para mais emails-->
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite o e-mail">
+            </div>
+            <div class="full-box"> <!--criar botão de + para mais celulares-->
+                <label for="phone">Celular:</label>
+                <input type="number" name="phone" id="phone" placeholder="Celular">
+            </div>
+            <div class="full-box">
+                <label for="born">linkedin:</label>
+                <input type="number" name="born" id="born" placeholder="dia/mês/ano">
+            </div>
+            <div class="fullbody-box">
+                <label for="resumo">Resumo das qualificações:</label>
+                <input type="resumo" name="resumo" id="resumo" placeholder="ex: possuo experiencia na are atal de tantos anos, atuando 
+                em x, y e z, etc...
+                tenho facilidade nisso e naquilo
+                tenho pacote offie básico com habilidade maior em word e excel
+                vivencia com crm - cadastro de sistemas clientes e produtos">
+            <div class="full-box">
+                <label for="formcao">Formação Acadêmica:</label>
+                <input type="formcao" name="formcao" id="formcao" placeholder="Ex: Marketing
+                Universidade UDF - em Brasília DF
+                conclusão 2009">
+            </div>
+            <div class="full-box">
+                <label for="area">Experiências Profissionais</label>
+                <input type="area" name="area" id="area" placeholder="Selecione">
+            </div>
+            <div class="half-box">
+                <label for="registro">Registro:</label>
+                <input type="text" name="registro" id="registro" placeholder="Informe">
+            </div>
+            <div class="half-box">
+                <label for="exames">Exames:</label>
+                <input type="text" name="exames" id="exames" placeholder="Informe os exames">
+            </div>
+            <div class="half-box">
+                <label for="doencas">Doenças que trata:</label>
+                <input type="text" name="doencas" id="doencas" placeholder="Informe as doenças">
+            </div>
+            <div class="half-box">
+                <label for="UF">Estado de emissão:</label>
+                <input type="UF" name="UF" id="UF" placeholder="Selecione o Estado">
+            </div>
+            <div class="half-box">
+                <label for="rqe">RQE:</label>
+                <input type="rqe" name="rqe" id="rqe" placeholder="RQE">
+            </div>
+            <div class="half-box">
+                <label for="rqe">RQE:</label>
+                <input type="rqe" name="rqe" id="rqe" placeholder="RQE">
+            </div>
+            <div class="full-box">
+                <label for="endereco">Endereço:</label>
+                <input type="endereco" name="endereco" id="endereco" placeholder="Informe seu endereço">
+            </div>
+            <div class="half-box">
+                <label for="estado">Estado:</label>
+                <input type="estado" name="estado" id="estado" placeholder="Selecione">
+            </div>
+            <div class="half-box">
+                <label for="cidade">Cidade:</label>
+                <input type="cidade" name="cidade" id="cidade" placeholder="Selecione">
+            </div>
+            <div class="full-box">
+                <label for="docment" class="form-label">Documentos:</label>
+                <input type="file" name="file" id="arquivo" wire:model="documet-file" class="form-input">
+            </div>
+            <div class="col-span-6 flex justify-end pb-3">
+                <button class="button button-primary button-small mx-0" wire:click="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <script src="cdprofissional.js"></script>
+</body>
+</html>
